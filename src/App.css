@@ -1,0 +1,180 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f3f3f3;
+}
+
+.app-container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+  transition: background-color 0.3s ease;
+}
+
+body.dark .app-container {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+
+.settings label {
+  display: block;
+  margin: 10px 0;
+}
+
+input[type="number"] {
+  margin-left: 10px;
+  padding: 6px;
+  width: 70px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.generate-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.generate-btn:hover {
+  background-color: #45a049;
+}
+
+.result {
+  margin-top: 25px;
+}
+
+.password-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px 15px;
+  border-radius: 8px;
+  gap: 10px;
+  overflow-wrap: anywhere;
+}
+
+body.dark .password-box {
+  background-color: #333;
+}
+
+.password-box button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.password-box button:hover {
+  background-color: #1e88e5;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Switch Styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider.round {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider.round:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider.round {
+  background-color: #2196f3;
+}
+
+input:checked + .slider.round:before {
+  transform: translateX(20px);
+}
+.brand {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.dark .brand {
+  color: #f3f3f3;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
