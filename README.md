@@ -14,7 +14,7 @@ A sleek, modern React-based app for generating secure, customizable passwords. B
 
 ## 🚀 Live Demo
 
-🌐 [keymint.vercel.app](https://keymint.vercel.app) — _(update with actual URL after deployment)_
+🌐 [keymint.vercel.app](https://keymint.vercel.app) — 
 
 ## 🛠️ Getting Started
 
